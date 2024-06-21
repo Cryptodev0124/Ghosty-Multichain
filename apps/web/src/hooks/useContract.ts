@@ -190,7 +190,7 @@ export const usePredictionsContract = (address: Address, tokenSymbol: string) =>
     if (address === getPredictionsV1Address()) {
       return getPredictionsV1Contract(signer)
     }
-    const getPredContract = tokenSymbol === 'CAKE' ? getCakePredictionsContract : getPredictionsV2Contract
+    const getPredContract = tokenSymbol === 'GHOSTTY' ? getCakePredictionsContract : getPredictionsV2Contract
 
     return getPredContract(address, signer)
   }, [address, tokenSymbol, signer])

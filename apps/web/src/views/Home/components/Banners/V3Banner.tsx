@@ -224,8 +224,8 @@ const V3Banner = () => {
       <S.Inner>
         <S.LeftWrapper>
           <Title>{t('PancakeSwap V3')}</Title>
-          <StyledSubheading data-text={t('Claim $135K CAKE Airdrop & Exclusive NFT')}>
-            {t('Claim $135K CAKE Airdrop & Exclusive NFT')}
+          <StyledSubheading data-text={t('Claim $135K GHOSTTY Airdrop & Exclusive NFT')}>
+            {t('Claim $135K GHOSTTY Airdrop & Exclusive NFT')}
           </StyledSubheading>
           <NextLinkFromReactRouter
             target="_blank"

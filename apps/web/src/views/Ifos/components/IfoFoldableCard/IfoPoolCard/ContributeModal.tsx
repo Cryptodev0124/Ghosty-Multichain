@@ -65,7 +65,7 @@ const ContributeModal: React.FC<React.PropsWithChildren<Props>> = ({
   const { callWithGasPrice } = useCallWithGasPrice()
   const { t } = useTranslation()
   const valueWithTokenDecimals = new BigNumber(value).times(DEFAULT_TOKEN_DECIMAL)
-  const label = currency === bscTokens.cake ? t('Max. CAKE entry') : t('Max. token entry')
+  const label = currency === bscTokens.cake ? t('Max. GHOSTTY entry') : t('Max. token entry')
 
   const { isApproving, isApproved, isConfirmed, isConfirming, handleApprove, handleConfirm } =
     useApproveConfirmTransaction({
@@ -117,17 +117,17 @@ const ContributeModal: React.FC<React.PropsWithChildren<Props>> = ({
   }, [maximumTokenEntry, userCurrencyBalance])
 
   const basicTooltipContent = t(
-    'For the private sale, each eligible participant will be able to commit any amount of CAKE up to the maximum commit limit, which is published along with the IFO voting proposal.',
+    'For the private sale, each eligible participant will be able to commit any amount of GHOSTTY up to the maximum commit limit, which is published along with the IFO voting proposal.',
   )
 
   const unlimitedToolipContent = (
     <Box>
-      <Text display="inline">{t('For the public sale, Max CAKE entry is capped by')} </Text>
+      <Text display="inline">{t('For the public sale, Max GHOSTTY entry is capped by')} </Text>
       <Text bold display="inline">
-        {t('the number of iCAKE.')}{' '}
+        {t('the number of iGHOSTTY.')}{' '}
       </Text>
       <Text display="inline">
-        {t('Lock more CAKE for longer durations to increase the maximum number of CAKE you can commit to the sale.')}
+        {t('Lock more GHOSTTY for longer durations to increase the maximum number of GHOSTTY you can commit to the sale.')}
       </Text>
     </Box>
   )
@@ -156,7 +156,7 @@ const ContributeModal: React.FC<React.PropsWithChildren<Props>> = ({
             <Flex flexGrow={1} justifyContent="flex-end">
               <Image
                 src={
-                  ifo.currency.symbol === 'CAKE'
+                  ifo.currency.symbol === 'GHOSTTY'
                     ? '/images/cake.svg'
                     : `/images/farms/${currency.symbol.split(' ')[0].toLowerCase()}.svg`
                 }
@@ -189,7 +189,7 @@ const ContributeModal: React.FC<React.PropsWithChildren<Props>> = ({
             >
               {valueWithTokenDecimals.isGreaterThan(userCurrencyBalance)
                 ? t('Insufficient Balance')
-                : t('Exceeded max CAKE entry')}
+                : t('Exceeded max GHOSTTY entry')}
             </Text>
           )}
           <Text color="textSubtle" textAlign="right" fontSize="12px" mb="16px">
@@ -213,7 +213,7 @@ const ContributeModal: React.FC<React.PropsWithChildren<Props>> = ({
           {vestingInformation.percentage > 0 && <IfoHasVestingNotice url={articleUrl} />}
           <Text color="textSubtle" fontSize="12px" mb="24px">
             {t(
-              'If you don’t commit enough CAKE, you may not receive a meaningful amount of IFO tokens, or you may not receive any IFO tokens at all.',
+              'If you don’t commit enough GHOSTTY, you may not receive a meaningful amount of IFO tokens, or you may not receive any IFO tokens at all.',
             )}
             <Link
               fontSize="12px"

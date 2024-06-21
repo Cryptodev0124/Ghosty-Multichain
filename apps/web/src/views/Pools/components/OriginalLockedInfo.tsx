@@ -32,7 +32,7 @@ const OriginalLockedInfo: React.FC<React.PropsWithChildren<OriginalLockedInfoPro
       </Text>
       <Box mt="12px">
         <Text>{t('Original locked amount')}:</Text>
-        <Text bold>{`${originalLockedAmountText} CAKE (${originalUsdValueText} USD)`}</Text>
+        <Text bold>{`${originalLockedAmountText} GHOSTTY (${originalUsdValueText} USD)`}</Text>
       </Box>
       <Box mt="12px">
         <Text>{t('Last action')}:</Text>

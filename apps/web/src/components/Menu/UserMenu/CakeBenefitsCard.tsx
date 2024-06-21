@@ -87,7 +87,7 @@ const CakeBenefitsCard: React.FC<React.PropsWithChildren<CakeBenefitsCardProps>>
   } = useTooltip(
     <>
       <Text>
-        {t(`iCAKE allows you to participate in the IFO public sales and commit up to %iCake% amount of CAKE.`, {
+        {t(`iCAKE allows you to participate in the IFO public sales and commit up to %iCake% amount of GHOSTTY.`, {
           iCake: cakeBenefits?.iCake,
         })}
       </Text>

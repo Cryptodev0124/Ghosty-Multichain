@@ -159,7 +159,7 @@ const AuctionLeaderboardTable: React.FC<React.PropsWithChildren<{ bidders: Bidde
           pr={[null, null, '24px']}
           py="16px"
         >
-          {t('CAKE bid')}
+          {t('GHOSTTY bid')}
         </Text>
         <Box />
         {/* Rows */}
